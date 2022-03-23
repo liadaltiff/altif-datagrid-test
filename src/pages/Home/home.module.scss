@@ -1,0 +1,37 @@
+.muiFixes {
+  .MuiTablePagination-displayedRows {
+    direction: rtl !important;
+    background-color: blue;
+  }
+  border: none;
+
+  * {
+    border: none !important;
+  }
+
+  & > div:first-child {
+    background-color: whitesmoke !important;
+    :where(div) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .dataHeader {
+    background-color: whitesmoke;
+    * {
+      font-weight: 600 !important;
+    }
+  }
+  .dataRow {
+    border: none !important;
+    &:hover {
+      background-color: lighten(whitesmoke, 1%) !important;
+    }
+  }
+  .dataRow:nth-child(odd) {
+    background-color: darken(#228cdb, 1%);
+  }
+  .dataRow:nth-child(even) {
+    background-color: darken(#228cdb, 3%);
+  }
+}
