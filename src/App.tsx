@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      <h1>hey</h1>
+      <h1>טבלת לכודים</h1>
       <Home />
     </div>
   );
