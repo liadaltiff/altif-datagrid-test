@@ -1,5 +1,5 @@
 import { IconButton, Tooltip } from "@mui/material";
-import FilterIcon from "@mui/icons-material/Delete";
+import FilterIcon from "@mui/icons-material/Filter";
 import {
   DataGrid,
   GridColDef,
@@ -60,9 +60,9 @@ export default function ToolbarGrid() {
         columns={columns}
         rows={rows}
         {...data}
-        // components={{
-        //   Toolbar: GridToolbar,
-        // }}
+        components={{
+          Toolbar: GridToolbar,
+        }}
         localeText={localeText}
       />
       <h1>HEYYYY</h1>
